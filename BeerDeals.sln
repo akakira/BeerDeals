@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApi", "BeerDealsApi\BeerDealsApi.csproj", "{90B52FFC-441F-4460-A334-2DED832D5FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApi.Tests", "BeerDealsApi.Tests\BeerDealsApi.Tests.csproj", "{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
