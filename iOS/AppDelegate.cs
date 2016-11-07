@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using ZXing.Net.Mobile.Forms.iOS;
 using Foundation;
 using UIKit;
 
@@ -20,8 +20,11 @@ namespace BeerDealsApp.iOS
 #endif
 
 			LoadApplication (new App ());
+			Platform.Init();
 
 			return base.FinishedLaunching (app, options);
+
+
 		}
 	}
 }
