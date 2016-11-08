@@ -25,8 +25,9 @@ namespace BeerDealsApp.Droid
 
 			LoadApplication (new App ());
 
-			Platform.Init();
+			ZXing.Net.Mobile.Forms.Android.Platform.Init();
 		}
+
 
 		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
 		{

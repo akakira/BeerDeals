@@ -8,7 +8,7 @@ namespace BeerDealsApp
 		{
 			InitializeComponent ();
 
-			MainPage = new BeerDealsAppPage ();
+			MainPage = new NavigationPage(new BeerDealsAppPage ());
 		}
 
 		protected override void OnStart ()

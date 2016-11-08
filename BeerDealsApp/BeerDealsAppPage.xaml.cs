@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using ZXing.Mobile;
 using System.Diagnostics;
+using ZXing.Net.Mobile.Forms;
 
 namespace BeerDealsApp
 {
@@ -13,17 +14,22 @@ namespace BeerDealsApp
 		}
 
 		protected async void btnClick(object sender, EventArgs e){
-			#if __ANDROID__
-			    // Initialize the scanner first so it can track the current context
-    	MobileBarcodeScanner.Initialize (Application);
-    #endif
+			var scanPage = new ZXingScannerPage ();
 
-			var scanner = new MobileBarcodeScanner();
+			scanPage.OnScanResult += (result) => {
+				// Stop scanning
+				scanPage.IsScanning = false;
 
-			var result = await scanner.Scan();
+				// Pop the page and show the result
+				Device.BeginInvokeOnMainThread (() => {
+					Navigation.PopAsync ();        
+					DisplayAlert("Scanned Barcode", result.Text, "OK");
+				});
+			};
 
-			if (result != null)
-				Debug.WriteLine("Scanned Barcode: " + result.Text);
+			// Navigate to our scanner page
+			await Navigation.PushAsync (scanPage);
+
 		}
 	}
 }
