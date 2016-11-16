@@ -1,10 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApi", "BeerDealsApi\BeerDealsApi.csproj", "{90B52FFC-441F-4460-A334-2DED832D5FCF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApi.Tests", "BeerDealsApi.Tests\BeerDealsApi.Tests.csproj", "{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApp", "BeerDealsApp\BeerDealsApp.csproj", "{81B3B221-FEF1-42C7-A28A-660EA35D712D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApp.iOS", "iOS\BeerDealsApp.iOS.csproj", "{A7EE1F83-A8AA-4F05-A210-237B1CD1C8D9}"
@@ -12,10 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApp.Droid", "Droid\BeerDealsApp.Droid.csproj", "{498F5273-F229-4345-9BE3-01030FFB5A04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerDealsApp.UITests", "UITests\BeerDealsApp.UITests.csproj", "{ABF48CCF-DC72-4559-84AF-F830F8E765E9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{9745DC21-2FC1-47E1-BA83-BEF46C1934A5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{A6F8FB80-0BD8-41DD-B001-9353BC8C592C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,30 +19,6 @@ Global
 		Debug|iPhone = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|iPhone.Build.0 = Release|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{90B52FFC-441F-4460-A334-2DED832D5FCF}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|iPhone.Build.0 = Release|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{81B3B221-FEF1-42C7-A28A-660EA35D712D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81B3B221-FEF1-42C7-A28A-660EA35D712D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B3B221-FEF1-42C7-A28A-660EA35D712D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -101,11 +69,5 @@ Global
 		{ABF48CCF-DC72-4559-84AF-F830F8E765E9}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{90B52FFC-441F-4460-A334-2DED832D5FCF} = {9745DC21-2FC1-47E1-BA83-BEF46C1934A5}
-		{975F6E8C-486F-4EE7-AE8C-7E512B7927A2} = {9745DC21-2FC1-47E1-BA83-BEF46C1934A5}
-		{81B3B221-FEF1-42C7-A28A-660EA35D712D} = {A6F8FB80-0BD8-41DD-B001-9353BC8C592C}
-		{498F5273-F229-4345-9BE3-01030FFB5A04} = {A6F8FB80-0BD8-41DD-B001-9353BC8C592C}
-		{A7EE1F83-A8AA-4F05-A210-237B1CD1C8D9} = {A6F8FB80-0BD8-41DD-B001-9353BC8C592C}
-		{ABF48CCF-DC72-4559-84AF-F830F8E765E9} = {A6F8FB80-0BD8-41DD-B001-9353BC8C592C}
 	EndGlobalSection
 EndGlobal
