@@ -118,12 +118,10 @@
     <Reference Include="Calabash">
       <HintPath>..\packages\Xamarin.TestCloud.Agent.0.20.3\lib\Xamarin.iOS10\Calabash.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook">
-      <HintPath>..\Components\facebook-sdk-6.2.2\lib\ios-unified\Facebook.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Maps">
       <HintPath>..\packages\Xamarin.Google.iOS.Maps.2.1.0\lib\Xamarin.iOS10\Google.Maps.dll</HintPath>
     </Reference>
+    <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -131,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Integrations\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -143,6 +142,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Integrations\FacebookServicesiOs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeerDealsApp\BeerDealsApp.csproj">
@@ -153,10 +153,6 @@
   <ItemGroup>
     <XamarinComponentReference Include="zxing.net.mobile.forms">
       <Version>2.1.12</Version>
-      <Visible>False</Visible>
-    </XamarinComponentReference>
-    <XamarinComponentReference Include="facebook-sdk">
-      <Version>6.2.2</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="googleiosmaps">

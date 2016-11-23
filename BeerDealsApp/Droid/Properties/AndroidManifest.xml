@@ -3,5 +3,6 @@
 	<uses-sdk android:minSdkVersion="19" />
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.FLASHLIGHT" />
-	<application android:label="BeerDealsApp"></application>
+	<application android:label="BeerDealsApp">
+	</application>
 </manifest>

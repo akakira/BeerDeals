@@ -2,7 +2,7 @@
 using Xamarin.Auth;
 namespace BeerDealsApp
 {
-	public interface FaceBookOperations
+	public interface IFaceBookServices
 	{
 		void Authenticate();
 	}
