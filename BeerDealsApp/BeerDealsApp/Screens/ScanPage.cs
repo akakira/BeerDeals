@@ -1,9 +1,9 @@
 ﻿using System;
 namespace BeerDealsApp
 {
-	public class IFacebook
+	public class ScanPage
 	{
-		public IFacebook ()
+		public ScanPage ()
 		{
 		}
 	}
