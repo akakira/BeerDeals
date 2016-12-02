@@ -5,7 +5,10 @@ using Android.App;
 using Android.Widget;
 using Android.OS;
 using Xamarin.Auth;
+using BeerDealsApp;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(IFaceBookServices))]
 namespace BeerDealsApp.Droid
 {
 	public class FacebookServicesAndroid : IFaceBookServices
@@ -25,7 +28,7 @@ namespace BeerDealsApp.Droid
 			// If authorization succeeds or is canceled, .Completed will be fired.
 			auth.Completed += (s, ee) => {
 				if (!ee.IsAuthenticated) {
-					var builder = new AlertDialog.Builder (Application.Context);
+					var builder = new AlertDialog.Builder (Android.App.Application.Context);
 					builder.SetMessage ("Not Authenticated");
 					builder.SetPositiveButton ("Ok", (o, e) => { });
 					builder.Create().Show();
@@ -35,7 +38,7 @@ namespace BeerDealsApp.Droid
 				// Now that we're logged in, make a OAuth2 request to get the user's info.
 				var request = new OAuth2Request ("GET", new Uri ("https://graph.facebook.com/me"), null, ee.Account);
 				request.GetResponseAsync().ContinueWith (t => {
-					var builder = new AlertDialog.Builder (Application.Context);
+					var builder = new AlertDialog.Builder (Android.App.Application.Context);
 					if (t.IsFaulted) {
 						builder.SetTitle ("Error");
 						builder.SetMessage (t.Exception.Flatten().InnerException.ToString());
@@ -53,8 +56,8 @@ namespace BeerDealsApp.Droid
 				}, UIScheduler);
 			};
 
-			var intent = auth.GetUI (Application.Context);
-			Application.Context.StartActivity (intent);
+			var intent = auth.GetUI (Android.App.Application.Context);
+			Android.App.Application.Context.StartActivity (intent);
 		}
 	}
 }

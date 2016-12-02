@@ -4,12 +4,15 @@ namespace BeerDealsApp
 {
 	public partial class App : Application
 	{
-		public App ()
+		public App()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 
-			MainPage = new NavigationPage(new BeerDealsAppPage ());
+			MainPage = new NavigationPage(new BeerDealsAppPage());
+			//App.FbServices = DependencyService.Get<IFaceBookServices>();
 		}
+
+		public static IFaceBookServices FbServices {get;set;}
 
 		protected override void OnStart ()
 		{

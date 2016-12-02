@@ -31,5 +31,10 @@ namespace BeerDealsApp
 			await Navigation.PushAsync (scanPage);
 
 		}
+
+		protected async void btnDoFBLogin(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

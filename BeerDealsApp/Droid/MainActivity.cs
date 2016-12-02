@@ -11,7 +11,6 @@ using ZXing.Net.Mobile.Forms.Android;
 
 [assembly:Permission (Name = Android.Manifest.Permission.Internet)]
 [assembly:Permission (Name = Android.Manifest.Permission.WriteExternalStorage)]
-[assembly:MetaData ("com.facebook.sdk.ApplicationId", Value ="@string/app_id")]
 namespace BeerDealsApp.Droid
 {
 	[Activity (Label = "BeerDealsApp.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

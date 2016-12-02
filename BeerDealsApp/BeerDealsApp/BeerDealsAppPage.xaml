@@ -9,5 +9,7 @@
 		</Grid.ColumnDefinitions>
 
 		<Button Grid.Row="0" Grid.Column="0" Text="Scan" Clicked="btnClick"></Button>
+		<Button Grid.Row="0" Grid.Column="0" Text="Login to facebook" Clicked="btnDoFBLogin"></Button>
+		
 	</Grid>
 </ContentPage>
