@@ -9,7 +9,7 @@ namespace BeerDealsApp
 			InitializeComponent();
 
 			MainPage = new NavigationPage(new BeerDealsAppPage());
-			//App.FbServices = DependencyService.Get<IFaceBookServices>();
+			App.FbServices = DependencyService.Get<IFaceBookServices>();
 		}
 
 		public static IFaceBookServices FbServices {get;set;}
