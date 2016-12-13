@@ -13,6 +13,7 @@ using ZXing.Net.Mobile.Forms.Android;
 [assembly:Permission (Name = Android.Manifest.Permission.WriteExternalStorage)]
 namespace BeerDealsApp.Droid
 {
+	//debug key hash BTE60TExkOLGteDPWI8rgx7zN2k=
 	[Activity (Label = "BeerDealsApp.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{

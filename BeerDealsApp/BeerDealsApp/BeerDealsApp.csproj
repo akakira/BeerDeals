@@ -40,11 +40,14 @@
       <DependentUpon>BeerDealsAppPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Integrations\IFacebookServices.cs" />
     <Compile Include="Integrations\IScanner.cs" />
     <Compile Include="Integrations\IMaps.cs" />
     <Compile Include="Screens\FbLogin.cs" />
     <Compile Include="Screens\ScanPage.cs" />
+    <Compile Include="Integrations\ProfilePage.cs" />
+    <Compile Include="Integrations\BaseContentPage.cs" />
+    <Compile Include="Integrations\LoginPage.cs" />
+    <Compile Include="Integrations\LoginConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ZXing.Net.Mobile.Core">

@@ -1,18 +1,34 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace BeerDealsApp
 {
 	public partial class App : Application
 	{
+		public static Page MainPageRef;
 		public App()
 		{
 			InitializeComponent();
+			App.MainPageRef = MainPage;
 
-			MainPage = new NavigationPage(new BeerDealsAppPage());
-			App.FbServices = DependencyService.Get<IFaceBookServices>();
+			MainPage =  new NavigationPage(new BeerDealsAppPage());
 		}
 
-		public static IFaceBookServices FbServices {get;set;}
+		public static string AuthorizationToken { get; set; } //persist to local storage
+
+		public static bool IsLoggedIn { get { return !string.IsNullOrWhiteSpace(AuthorizationToken); }}
+
+		public static Action SuccessfulLoginAction
+		{
+			get
+			{
+				return new Action(() =>
+				{
+					//null ref ex
+					MainPageRef.Navigation.PopModalAsync();
+				});
+			}
+		}
 
 		protected override void OnStart ()
 		{

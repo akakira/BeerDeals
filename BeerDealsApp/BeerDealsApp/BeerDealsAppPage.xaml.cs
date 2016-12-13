@@ -32,9 +32,9 @@ namespace BeerDealsApp
 
 		}
 
-		protected async void btnDoFBLogin(object sender, EventArgs e)
+		protected void btnDoFBLogin(object sender, EventArgs e)
 		{
-			App.FbServices.Authenticate();
+			Navigation.PushModalAsync(new NavigationPage(new ProfilePage()));
 		}
 	}
 }

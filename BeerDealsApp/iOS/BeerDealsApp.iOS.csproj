@@ -145,7 +145,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Integrations\FacebookServicesiOs.cs" />
+    <Compile Include="Integrations\LoginPageRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeerDealsApp\BeerDealsApp.csproj">
