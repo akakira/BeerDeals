@@ -9,9 +9,10 @@ namespace BeerDealsApp
 		public App()
 		{
 			InitializeComponent();
-			App.MainPageRef = MainPage;
 
 			MainPage =  new NavigationPage(new BeerDealsAppPage());
+
+			App.MainPageRef = MainPage;
 		}
 
 		public static string AuthorizationToken { get; set; } //persist to local storage
@@ -24,7 +25,6 @@ namespace BeerDealsApp
 			{
 				return new Action(() =>
 				{
-					//null ref ex
 					MainPageRef.Navigation.PopModalAsync();
 				});
 			}

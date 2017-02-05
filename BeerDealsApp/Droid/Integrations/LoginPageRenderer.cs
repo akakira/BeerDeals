@@ -4,6 +4,7 @@ using BeerDealsApp;
 using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using System.Threading.Tasks;
 
 [assembly: ExportRenderer(typeof(LoginPage), typeof(LoginPageRenderer))]
 namespace BeerDealsApp
@@ -27,7 +28,7 @@ namespace BeerDealsApp
 			{
 				if (eventArgs.IsAuthenticated)
 				{
-					App.SuccessfulLoginAction.Invoke();
+					App.SuccessfulLoginAction();
 					// Use eventArgs.Account to do wonderful things
 					App.AuthorizationToken=eventArgs.Account.Properties["access_token"];
 				}
@@ -37,6 +38,7 @@ namespace BeerDealsApp
 			};
 
 			activity.StartActivity(auth.GetUI(activity));
+		
 		}
 	}
 }

@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using ZXing.Mobile;
 using System.Diagnostics;
 using ZXing.Net.Mobile.Forms;
+using Xamarin.Auth;
 
 namespace BeerDealsApp
 {
@@ -34,7 +35,10 @@ namespace BeerDealsApp
 
 		protected void btnDoFBLogin(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new NavigationPage(new ProfilePage()));
+			//remember the navigation hierarchy, this was causing issues when i had opened a model in a model window. 
+			Navigation.PushModalAsync(new LoginPage());
+
+
 		}
 	}
 }
